@@ -238,9 +238,11 @@ h1 {
 .slider {
   position: relative;
   width: 100%;
-  aspect-ratio: 21 / 9;
+  max-width: 760px;          /* keeps a 4:3 frame from getting too tall */
+  aspect-ratio: 4 / 3;       /* same shape as the illustrations */
+  margin: 0 auto;
   overflow: hidden;
-  background: var(--ink);
+  background: var(--paper);  /* matches the illustration background */
 }
 
 .slider img {
@@ -248,20 +250,12 @@ h1 {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;       /* shows the whole image, never crops */
   opacity: 0;
   transition: opacity 1s ease;
 }
 
-.slider img.is-active {
-  opacity: 1;
-}
-
-@media (max-width: 720px) {
-  .slider {
-    aspect-ratio: 4 / 3;
-  }
-}
+.slider img.is-active { opacity: 1; }
 
 @media (prefers-reduced-motion: reduce) {
   .slider img {

@@ -51,9 +51,7 @@
 /* Photo slider: swaps every 5 seconds */
 (function () {
   var folder = 'images/gallery/';
-  var files = ['photo1.svg', 'photo2.svg', 'photo3.svg', 'photo4.svg', 'photo5.svg'];
-  var delay = 5000;
-
+  var files = ['agriculture.svg', 'construction.svg', 'consultancy.svg', 'ecommerce.svg', 'energy.svg', 'engineering.svg', 'investment.svg', 'logistics.svg', 'manufacturing.svg', 'mining.svg', 'technology.svg', 'trading.svg'];  var delay = 5000;
   var slider = document.getElementById('slider');
   if (!slider) return;
 
