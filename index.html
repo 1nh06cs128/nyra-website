@@ -4,232 +4,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NYRA & YASH RESOURCE ALLIANCE - Industrial solutions, infrastructure and railway sector opportunities.">
-  <title>NYRA & YASH RESOURCE ALLIANCE</title>
+  <meta name="description" content="NYRA & YASH RESOURCE ALLIANCE - Industrial solutions and infrastructure opportunities.">
+  <title>NYRA</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      color: #243044;
-      line-height: 1.6;
-      background: #ffffff;
-    }
-
-    header {
-      background: #10243b;
-      color: white;
-      padding: 22px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .logo {
-      font-size: 21px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 22px;
-      font-size: 14px;
-    }
-
-    .hero {
-      background: linear-gradient(120deg, #10243b, #24547b);
-      color: white;
-      padding: 110px 8%;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: clamp(30px, 5vw, 48px);
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      max-width: 750px;
-      margin: auto;
-      color: #dce6f0;
-      font-size: 18px;
-    }
-
-    .section {
-      padding: 75px 8%;
-      text-align: center;
-    }
-
-    .section h2 {
-      font-size: 30px;
-      margin-bottom: 18px;
-      color: #10243b;
-    }
-
-    .section-intro {
-      max-width: 750px;
-      margin: 0 auto 35px;
-      color: #667085;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 22px;
-      margin-top: 35px;
-    }
-
-    .service-card {
-      padding: 30px 22px;
-      border: 1px solid #e3e8ef;
-      border-radius: 10px;
-      background: #ffffff;
-      text-align: left;
-    }
-
-    .service-card h3 {
-      color: #17466e;
-      margin-bottom: 12px;
-    }
-
-    .service-card p {
-      color: #667085;
-      font-size: 14px;
-    }
-
-    .highlight {
-      background: #f2f6fa;
-    }
-
-    .contact {
-      background: #10243b;
-      color: white;
-    }
-
-    .contact h2 {
-      color: white;
-    }
-
-    .contact p {
-      color: #dce6f0;
-      margin: 10px;
-    }
-
-    footer {
-      background: #0a1929;
-      color: #aebdce;
-      padding: 22px;
-      text-align: center;
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        justify-content: center;
-        text-align: center;
-      }
-
-      nav a {
-        margin: 0 7px;
-      }
-
-      .hero {
-        padding: 75px 7%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="_fonts.css">
+  <link rel="stylesheet" href="_variables.css">
+  <link rel="stylesheet" href="_styles.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">NYRA & YASH</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#business">Business</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="bar">
+    <a class="name" href="/">Nyra & Yash Resouce Alliance</a>
+    <a class="mail" href="mailto:hello@nyragroup.in">hello@nyragroup.in</a>
   </header>
 
-  <section class="hero" id="home">
-    <h1>Building Industrial Opportunities</h1>
-    <p>
-      NYRA & YASH RESOURCE ALLIANCE is focused on
-      industrial development, infrastructure solutions
-      and opportunities across India's growing economy.
-    </p>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>Hello.</h1>
 
-  <section class="section" id="about">
-    <h2>About Us</h2>
-    <p class="section-intro">
-      NYRA & YASH RESOURCE ALLIANCE aims to build
-      sustainable business partnerships through industrial
-      development, quality products and reliable execution.
-      We aspire to contribute to India's infrastructure
-      and manufacturing ecosystem.
-    </p>
-  </section>
+      <p class="statement">
+        We will make things and look after them.
+        Our field is <span class="blank" id="blank" aria-live="off">to be decided</span>.
+      </p>
 
-  <section class="section highlight" id="business">
-    <h2>Our Business Focus</h2>
-    <p class="section-intro">
-      Exploring opportunities across manufacturing,
-      infrastructure and industrial supply chains.
-    </p>
+      <div class="try">
+        <p>Try one on</p>
+        <ul id="options">
+          <li><button type="button">furniture</button></li>
+          <li><button type="button">water treatment</button></li>
+          <li><button type="button">packaging</button></li>
+          <li><button type="button">solar mounting</button></li>
+          <li><button type="button">textiles</button></li>
+          <li><button type="button">electric bikes</button></li>
+          <li><button type="button">food equipment</button></li>
+          <li><button type="button">medical devices</button></li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="services">
-      <div class="service-card">
-        <h3>Industrial Manufacturing</h3>
-        <p>
-          Manufacturing initiatives, engineering products
-          and industrial component development.
-        </p>
+    <section class="gallery" aria-label="Photos">
+      <div class="slider" id="slider"></div>
+    </section>
+
+    <section class="work">
+      <div class="col">
+        <h2>Manufacturing</h2>
+        <p>Products designed to be built well, and built the same way every time.</p>
+        <ul>
+          <li>Design for manufacture</li>
+          <li>Small batches to full series</li>
+          <li>Inspection at every stage</li>
+        </ul>
       </div>
 
-      <div class="service-card">
-        <h3>Infrastructure Solutions</h3>
-        <p>
-          Exploring opportunities in infrastructure,
-          construction materials and allied sectors.
-        </p>
+      <div class="col">
+        <h2>Services</h2>
+        <p>Support that continues after delivery, for as long as the product is in use.</p>
+        <ul>
+          <li>Installation and commissioning</li>
+          <li>Maintenance and spare parts</li>
+          <li>Training and support</li>
+        </ul>
       </div>
+    </section>
 
-      <div class="service-card">
-        <h3>Industrial Procurement</h3>
-        <p>
-          Business partnerships, sourcing and supply
-          opportunities across industrial sectors.
-        </p>
-      </div>
+    <section class="contact">
+      <p>Want to know first when we decide?</p>
+      <a href="mailto:hello@nyragroup.in">hello@nyragroup.in</a>
+    </section>
+  </main>
 
-    </div>
-  </section>
-
-  <section class="section" id="contact">
-    <h2>Let's Connect</h2>
-    <p class="section-intro">
-      For business enquiries, partnerships and
-      collaboration opportunities, get in touch with us.
-    </p>
-    <p>Email: contact@yourdomain.com</p>
-    <p>India</p>
-  </section>
-
-  <footer>
-    © 2026 NYRA & YASH RESOURCE ALLIANCE.
-    All Rights Reserved.
+  <footer class="foot">
+    <span>&copy; <span id="year">2026</span> NYRA</span>
+    <span>RAIPUR, INDIA</span>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>

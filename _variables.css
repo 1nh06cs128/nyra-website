@@ -1,0 +1,14 @@
+:root {
+    --font-Archia: 'Archia';
+    --font-HelveticaNeue: 'Helvetica Neue';
+    --color-White: #ffffff;
+    --color-Black: #000000;
+
+    --paper: #ecedea;
+    --panel: #f6f6f3;
+    --ink: #15181b;
+    --steel: #6f767d;
+    --line: #c4c8c7;
+    --cobalt: #2340e0;
+    --pad: clamp(20px, 5vw, 64px);
+}
